@@ -14,65 +14,65 @@
       format("svg");
 }
 #app {
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
 
 body {
-  background: #c2c2d6;
-  -webkit-touch-callout: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  -webkit-touch-callout: none;
   -webkit-user-select: none;
-  user-select: none;
+  background: #c2c2d6;
   cursor: default;
+  user-select: none;
 }
 
 .calculator {
+  background: black;
   border: 2px solid #47476b;
   padding: 5px;
-  background: black;
-  width: 320px;
   position: relative;
+  width: 320px;
 }
 
 .formulaScreen {
-  min-height: 20px;
+  color: orange;
   font-family: digital;
   font-size: 20px;
-  color: orange;
+  line-height: 20px;
+  min-height: 20px;
+  overflow-wrap: break-word;
   text-align: right;
   vertical-align: text-top;
-  line-height: 20px;
-  overflow-wrap: break-word;
   word-wrap: break-word;
 }
 
 .outputScreen {
+  color: white;
   font-size: 29px;
   font-family: digital;
-  color: white;
-  text-align: right;
   line-height: 35px;
+  text-align: right;
 }
 
 button {
-  position: relative;
-  height: 65px;
-  width: 80px;
-  color: white;
-  outline: 1px solid black;
-  border: none;
   background: #4d4d4d;
+  border: none;
+  color: white;
+  cursor: default;
   font-family: Share Tech Mono, monospace;
   font-size: 20px;
-  cursor: default;
+  outline: 1px solid black;
+  position: relative;
+  width: 80px;
+  height: 65px;
 }
 button:hover {
   color: black;
-  outline: 0.05em solid grey;
+  outline: .05em solid grey;
   z-index: 3;
 }
 
@@ -81,12 +81,12 @@ button:hover {
 }
 
 .author {
-  text-align: center;
   font-family: Share Tech Mono, sans;
   margin-top: 15px;
+  text-align: center;
 }
 .author a {
-  text-decoration: none;
   color: #00264d;
   line-height: 26px;
+  text-decoration: none;
 }
